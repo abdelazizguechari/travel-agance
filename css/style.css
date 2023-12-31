@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+
+
+
+:root {
+
+    --orange : #88a2b0;
+    --blue : #182d38;
+    --background:#f3f3f3;
+    --transition : 0.3s linear;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0; padding: 0;
+    outline: none; border: none;
+    text-decoration: none;
+    
+}
+
+body {
+  height: 10000px;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+} 
+
+
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    background:var(--background);
+    z-index: 9999999;
+}
+
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header .container .logo p {
+  font-family: 'Kalam', cursive;
+  margin-top: 1px;
+font-size: 4vh;
+
+}
+
+.header .container .logo p .er {
+  font-family: 'Kalam', cursive;
+  text-transform: lowercase;
+  color: var(--orange);
+}
+
+
+  
+.header .container .nav a{
+  font-family: 'Kalam', cursive;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s linear;
+    position: relative;
+    }  
+
+    .header .container .nav a::before {
+      content: ""; 
+      position: absolute;   
+    height: 4px ;  
+  background-color: var(--orange) ;
+  top: 0;
+    }
+
+  
+
+    .header .container .nav a span {
+      font-family: 'Kalam', cursive;
+        color: var(--orange);
+      font-weight: 400; }
+
+
+      .header .container .nav a:hover {
+     color: var(--orange);
+     font-size: 2.1em;
+      }
+      
+
+
+    .landing  {
+
+      padding-top: 20px ;
+      background: url(/image/BACKGROUND.png);
+      background-size: cover ;
+      height: 100vh;
+      animation: animate 800s infinite;
+    }
+
+
+    @keyframes animate {
+      0% {
+    background-position-y: 0px;
+      }
+      
+
+      25% {
+       background-position-x: 1000px;
+      }
+
+      50% {
+       background-position-y: 3000px;
+      }
+
+
+      100% {
+        background-position-y: -3000px;
+       }
+    }
+
+
+    .landing .intro {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      width: 490px;
+      max-width: 100%;
+    }
+    .landing .intro h1 {
+      margin: 0;
+      font-weight: bolder;
+      font-size: 50px;
+      letter-spacing: 15px;
+      color: rgb(254, 254, 254);
+    }
+    .landing .intro p {
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .landing .forma {
+      background-color: white;
+      padding: 20px;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      max-width: 100%;
+    }
+
+    .landing .forma 
+    select +
+  input {
+      padding: 10px;
+      background-color: red;
+    }
+    .section {
+      padding-top: 100px;
+      background-color:var(--background);
+      padding-bottom: 30px;
+      
+    }
+
+    .section .container {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .section .container h1 {
+      font-size: 4em;
+      margin-bottom: 30px;
+      color: var(--orange);
+      transition: linear 0.3s;
+
+    }
+
+    .section .container h1:hover {
+letter-spacing: 3px;
+    }
+
+   
+
+      .section .container .about {
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+
+      }
+
+   
+
+
+   
+  
+    .section .container .about img{
+
+      position: relative;
+      width: 500px;
+      transition: 0.1s linear;
+      width: 600px;
+    height: 800px; }
+  
+
+      .section .container .about button {
+        position: absolute;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--orange);
+        font-size: 16px;
+        color: white;
+        width: 200px;
+        letter-spacing: 5px;
+        transition: 0.3s linear;
+      }
+
+      .section .container .about button:hover {
+        background-color: var(--blue);
+        width: 220px;
+        font-size: 20px;
+        
+      }
+
+
+      .section .container  .we {
+
+        background: linear-gradient(45deg, var(--blue), var(--orange));
+        padding: 10px;
+       box-shadow: 5px 5px 10px #888888;
+        height: 800px;
+        width: 1000px;
+        z-index: 10000;
+      }
+
+
+      .section .container .we h1 {
+font-weight: 100;
+font-size: 30px;
+padding-left: 20px;
+padding-top:20px ;
+
+      } 
+      .section .container .we p {
+        font-size: 35px;
+        color: #fff;
+        padding: 10px;
+        font-weight: 700;
+
+      }
+
+      .section .container .we pre {
+        color: #fff;
+        font-size: 12px;
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+      .section .container  .we img {
+        padding-left: 100px;
+        padding-bottom: 30px;
+        width: 450px;
+        height: 230px;
+        transition: var(--transition);
+      }
+
+
+      .futuer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #fff;
+      }
+
+       .p {
+        font-size: 35px;
+        text-align: center;
+        color:var(--blue);
+        padding: 10px;
+        font-weight: 700;
+        padding-bottom: 50px; 
+      transition: 0.3s ease-in-out;}
+
+        .futuer .container .p:hover {
+          letter-spacing: 3px;
+        }
+      
+      .futuer .v-pre {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 30px;
+      }
+
+      .futuer .v-pre  .card {
+        position: relative;
+        border: 1px solid black;
+        transition: 0.3s linear;
+        margin: 10px;
+        opacity: 0.9;
+        filter: blur(0.3px);
+      }
+
+      .futuer .v-pre  .card:hover {
+        transform: scale(1.1);
+        filter: blur(0px);
+      }
+
+      .futuer .v-pre  .card img {
+      max-width: 100%;
+      transition: 0.2s linear;
+      cursor: pointer;
+
+      }
+
+      .clickable-image {
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 12%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-shadow: 1px 1px 5px black;
+        font-size: 27px;
+        font-weight: bolder;
+        opacity: 0.8;
+        transition: 0.3s ease-in-out;
+      }
+  
+      .clickable-image:hover .overlay {
+        opacity: 1;
+      }
+
+      .article {
+        background:url(/image/chambre-brouille-fauteuils-verts.jpg);
+        background-size: cover;
+      padding-bottom: 1000px;}
+  
