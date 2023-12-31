@@ -127,7 +127,7 @@ font-size: 4vh;
     .landing  {
 
       padding-top: 20px ;
-      background: url(/image/BACKGROUND.png);
+      background: url(./image/BACKGROUND.png);
       background-size: cover ;
       height: 100vh;
       animation: animate 800s infinite;
@@ -375,7 +375,7 @@ padding-top:20px ;
       }
 
       .article {
-        background:url(/image/chambre-brouille-fauteuils-verts.jpg);
+        background:url(./image/chambre-brouille-fauteuils-verts.jpg);
         background-size: cover;
       padding-bottom: 1000px;}
   
